@@ -732,7 +732,7 @@ Southwest <- Southwest %>%
                              Likelihood.to.recommend >6  ~ 'Non-Detractor')) 
 # Above created a new bin group to just analyze where the harmful detractors are
 
-# SVMA ____________________________________________________________________________________________________
+# Support Vector Machine (SVM) Analysis____________________________________________________________________________________________________
 svm <- data.frame(Age = Southwest$AgeBins, Olat = Southwest$OriginLat, 
                   TravelType = Southwest$Type.of.Travel, Status = Southwest$Airline.Status,
                   RecNPS = as.factor(Southwest$DetractorNPS))
